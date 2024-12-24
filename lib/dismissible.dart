@@ -42,8 +42,14 @@ class _DismissibleWidgetState extends State<DismissibleWidget> {
                 }
               },
               key: Key(fruit),
-              child: ListTile(
-                title: Text(fruits[index]),
+              background: Container(color: Colors.red),
+              secondaryBackground: Container(
+                color: Colors.green,
+              ),
+              child: Card(
+                child: ListTile(
+                  title: Text(fruits[index]),
+                ),
               ));
         },
       ),

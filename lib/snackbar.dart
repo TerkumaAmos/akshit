@@ -24,9 +24,9 @@ class SnackbarWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20)),
                 behavior: SnackBarBehavior.floating,
                 //   padding: EdgeInsets.all(ve),
-                duration: Duration(milliseconds: 3000),
+                duration: const Duration(milliseconds: 3000),
                 // backgroundColor: Colors.red,
-                content: Text('This is an error'),
+                content: const Text('This is an error'),
               );
               ScaffoldMessenger.of(context).showSnackBar(snackbar);
             },
